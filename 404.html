@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100e18">
+<meta name="robots" content="noindex">
+<title>ไม่พบหน้านี้ — ARCANA</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:#100e18;color:#f0eae0;font-family:'Noto Sans Thai',Tahoma,sans-serif}
+.box{max-width:460px}
+.star{font-size:56px;color:#cfb47e;line-height:1;margin-bottom:18px}
+.code{font:500 14px Georgia,serif;letter-spacing:4px;color:#a78b60;margin:0 0 10px}
+h1{font:400 28px/1.6 'Noto Serif Thai',Georgia,serif;margin:0 0 12px}
+p{font-size:15px;line-height:1.9;color:#a69eaf;margin:0 0 28px}
+a{display:inline-block;padding:14px 28px;border-radius:5px;border:1px solid #e5ce9f;background:linear-gradient(110deg,#dbc38e,#bea16b);color:#201b13;font-weight:600;text-decoration:none}
+a:hover{background:linear-gradient(110deg,#efdab0,#cfb47e)}
+a:focus-visible{outline:2px solid #e8d7b1;outline-offset:4px}
+</style>
+</head>
+<body>
+<main class="box">
+<div class="star" aria-hidden="true">✧</div>
+<p class="code">ERROR 404</p>
+<h1>ไพ่ใบนี้หายไปจากสำรับ</h1>
+<p>ไม่พบหน้าที่คุณกำลังมองหา อาจพิมพ์ที่อยู่ผิด หรือหน้านี้ถูกย้ายไปแล้ว กลับไปเริ่มเปิดไพ่ใหม่ได้เลย</p>
+<a id="home" href="/">กลับหน้าหลัก ✦</a>
+</main>
+<script>
+// GitHub Pages แบบ project site อยู่ที่ /ชื่อ-repo/ จึงต้องหา base path จาก URL ปัจจุบัน
+(function(){
+  var host=location.hostname,seg=location.pathname.split('/')[1];
+  var isProject=/\.github\.io$/.test(host)&&seg;
+  document.getElementById('home').href=isProject?'/'+seg+'/':'/';
+})();
+</script>
+</body>
+</html>
